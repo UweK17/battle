@@ -8,4 +8,5 @@ In the project directory, you can run:
 
 ## Install packages
 
-### ``
+### `npm i react-router-dom`,
+
