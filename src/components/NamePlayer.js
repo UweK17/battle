@@ -1,14 +1,18 @@
 import React, {useState} from 'react';
 import {Route, Routes, useNavigate} from 'react-router-dom';
-import Hangar from './Hangar.js';
 
 
-const ChoosePlayerNames = () => {
+const NamePlayer = () => {
 
   const navigate = useNavigate();
-  const navigateToHangar = () => {
-    navigate('../hangar');
-  };
+  // const navigateToHangar = () => {
+  //   console.log("vornavigate " + playerOneName);
+  //   console.log("vornavigate " + playerTwoName);
+  //   navigate('/hangar', 
+  //   {playerOneName: playerOneName, playerTwoName: playerTwoName});
+  //   console.log("nachnavigate " + playerOneName);
+  //   console.log("nachnavigate " + playerTwoName);
+  // };
 
   const [formDataOne, setFormDataOne] = useState("");
   const [formDataTwo, setFormDataTwo] = useState("");
@@ -73,14 +77,14 @@ const ChoosePlayerNames = () => {
         </form>
       </div>
       <div>
-        <button onClick={navigateToHangar}>Players, go to the Hangar and choose your Units</button>
-        <Routes>
-          <Route path="../hangar" element={<Hangar />} />
-        </Routes>
-        
+        <button onClick={() => 
+        navigation.navigate('/hangar', {
+          p1N: playerOneName,
+          p2N: playerTwoName
+        })}>Players, go to the Hangar and choose your Units</button>
       </div>
     </div>
   )
 }
 
-export default ChoosePlayerNames;
+export default NamePlayer;

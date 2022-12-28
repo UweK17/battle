@@ -2,6 +2,7 @@ import './App.css';
 import {Route, Routes, useNavigate} from 'react-router-dom';
 import NamePlayer from './components/NamePlayer.js';
 import AddUnits from './components/AddUnits.js';
+import Hangar from './components/Hangar.js';
 
 function App() {
   const navigate = useNavigate();
@@ -26,7 +27,8 @@ function App() {
       </div>
 
     <Routes>
-      <Route path="/nameplayer/*" element={<NamePlayer />} />
+      <Route path="/nameplayer" element={<NamePlayer />} />
+      <Route path="/hangar" element={<Hangar />} />
       <Route path="/addunits" element={<AddUnits />} />
     </Routes>  
     </div>
