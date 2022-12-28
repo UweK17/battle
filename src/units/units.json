@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Haubitze",
+    "attack": 25,
+    "defence": 5,
+    "speed": 5,
+    "armor": 25
+  },
+  {
+    "name": "Panzer",
+    "attack": 15,
+    "defence": 15,
+    "speed": 15,
+    "armor": 15
+  },
+  {
+    "name": "Drohne",
+    "attack": 5,
+    "defence": 25,
+    "speed": 25,
+    "armor": 5
+  }
+]

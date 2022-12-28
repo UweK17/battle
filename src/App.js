@@ -26,7 +26,7 @@ function App() {
       </div>
 
     <Routes>
-      <Route path="/nameplayer" element={<NamePlayer />} />
+      <Route path="/nameplayer/*" element={<NamePlayer />} />
       <Route path="/addunits" element={<AddUnits />} />
     </Routes>  
     </div>
