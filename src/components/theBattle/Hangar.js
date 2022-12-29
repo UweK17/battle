@@ -1,4 +1,5 @@
 import React from 'react';
+import NamePlayer from '../NamePlayer.js';
 
 const Hangar = () => {
   return (

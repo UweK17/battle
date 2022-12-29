@@ -1,8 +1,9 @@
 import './App.css';
+import React from 'react';
 import {Route, Routes, useNavigate} from 'react-router-dom';
 import NamePlayer from './components/NamePlayer.js';
 import AddUnits from './components/AddUnits.js';
-import Hangar from './components/Hangar.js';
+import Hangar from './components/theBattle/Hangar.js';
 
 function App() {
   const navigate = useNavigate();
